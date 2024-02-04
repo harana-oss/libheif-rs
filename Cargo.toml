@@ -15,6 +15,7 @@ documentation = "https://docs.rs/crate/libheif-rs"
 enumn = "0.1"
 four-cc = "0.3"
 libc = "0.2"
+libheif-sys = { git = "https://github.com/harana-oss/libheif-sys", default-features = false }
 
 
 [features]
@@ -22,11 +23,6 @@ default = ["use-bindgen"]
 # Use bindgen to generate bindings for libheif,
 # instead using of pre-generated bindings.rs.
 use-bindgen = ["libheif-sys/use-bindgen"]
-
-
-[dependencies.libheif-sys]
-version = "2"
-default-features = false
 
 
 [dev-dependencies]
